@@ -64,6 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Game\Script\Data\DataPlayerprefer.cs" />
+    <Compile Include="Assets\Game\Script\Data\Scenes.cs" />
+    <Compile Include="Assets\Game\Script\Window\Game\GameWindow.cs" />
     <Compile Include="Assets\Game\Script\Window\Login\LoginWindow.cs" />
     <Compile Include="Assets\Game\UI\UI pack\Scripts\FillValueNumber.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
