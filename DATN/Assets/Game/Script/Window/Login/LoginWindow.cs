@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour
+public class LoginWindow : MonoBehaviour
 {
+    [SerializeField]
+    private TMPro.TMP_InputField userName;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +18,10 @@ public class NewBehaviourScript : MonoBehaviour
     {
         
     }
+
+    public void OnClick_Play()
+    {
+        PlayerPrefs.SetString(DataPlayerprefer.USERNAME, userName.text);
+        SceneManager.LoadScene(Scenes.GAME_SCENE, LoadSceneMode.Single);
+    }    
 }
